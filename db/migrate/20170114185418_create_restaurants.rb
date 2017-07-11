@@ -5,7 +5,7 @@ class CreateRestaurants < ActiveRecord::Migration[5.0]
       t.string :address, null: false
       t.string :city, null: false
       t.string :state, null: false
-      t.integer :zip, null: false
+      t.string :zip, null: false
       t.text :description
       t.timestamps
     end
