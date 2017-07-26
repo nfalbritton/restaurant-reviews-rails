@@ -7,6 +7,7 @@ class CreateRestaurants < ActiveRecord::Migration[5.0]
       t.string :state, null: false
       t.string :zip, null: false
       t.text :description
+
       t.timestamps
     end
   end
