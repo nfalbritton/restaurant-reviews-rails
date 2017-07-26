@@ -7,7 +7,7 @@
   <%= @restaurant.zip %>
 </div>
 
-<div>
+<div class="box">
   <%= @restaurant.description %>
 </div>
 
@@ -16,7 +16,8 @@
     <% @reviews.each do |review| %>
     <%=review.rating %>
     <%=review.body %>
-    <%=review.created_at.strftime("%B %d %Y") %>
+    <%= review.created_at.strftime("%B %d %Y") %>
   <% end %>
+</table>
 
 <%= link_to "Add Review", new_restaurant_review_path(@restaurant) %>
